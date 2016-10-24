@@ -1,0 +1,45 @@
+/*首页样式*/
+.hdu-wrap {
+	position: relative;
+	width: 100%;
+}
+
+/*头部*/
+.header {
+	position: relative;
+	height: 160px;
+	width: 100%;
+}
+.header-content {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/*导航部分*/
+.nav-banner {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	bottom: 1px solid #1f89d0;
+	background-color: #fff;
+}
+.nav-banner-content {
+	position: relative;
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.hdu-content {
+	position: relative;
+	width: 1000px;
+	background-color: #fff;
+	margin: 0 auto;
+	min-height: 300px;
+}
+
+.footer {
+	width: 100%;
+	background-color: #fff;
+}
