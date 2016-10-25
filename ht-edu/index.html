@@ -3,8 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<title>教育网</title>
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+
+	<script type="text/javascript" src = "js/jquery.min.js"></script>
 </head>
 <body>
 	<div class="hdu-wrap">
@@ -92,9 +94,108 @@
 					</div>
 				</div>
 			</div>
-			<div class="subsystems">
+			<ul class="subsystems clearfix">
+				<li><a href = "###"><img src="images/icon_system_01.png" />出监实训</a></li>
+				<li><a href = "###"><img src="images/icon_system_02.png" />在线考试</a></li>
+				<li><a href = "###"><img src="images/icon_system_03.png" />自助查询</a></li>
+				<li><a href = "###"><img src="images/icon_system_04.png" />视频会见</a></li>
+				<li><a href = "###"><img src="images/icon_system_05.png" />心理咨询</a></li>
+				<li><a href = "###"><img src="images/icon_system_06.png" />视频点播</a></li>
+			</ul>
+			<div class="news-container clearfix">
+				<div class="news-part">
+					<ul class="news-tit clearfix">
+						<li class="title-active"  _content = "block1-1"><a href="###">监区文化</a></li>
+					</ul>
+					<ul class="news-block" id="block1-1">
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="news-part">
+					<ul class="news-tit clearfix">
+						<li class="title-active" _content = "block2-1"><a href="###">通知公告</a></li>
+						<li _content = "block2-2"><a href="###">考勤奖励</a></li>
+					</ul>
+					<ul class="news-block" id="block2-1">
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+					</ul>
+					<ul class="news-block" id="block2-2">
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信adfa息2</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的dfa信息2</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的daf信息</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的信息fad2</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+						<li>
+							<a href = "###">
+							<span class = "news-text">这里是监区文化的信息，化的fsadf信息2</span>
+							<span class="news-time">2016-10-25</span></a>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="news-content">这里是各个子系统部分</div>
 		</div>
 		<div class="footer">
 			<div class="footer-content">
@@ -123,5 +224,19 @@
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		$(function() {
+			toggleTab();
+		})
+
+		//切换最新消息tab块
+		function toggleTab() {
+			$(".news-tit li").hover(function() {
+				$(this).addClass("title-active").siblings().removeClass("title-active");
+				$('#'+$(this).attr("_content")).show().siblings(".news-block").hide();
+			})
+		}
+	</script>
 </body>
 </html>
