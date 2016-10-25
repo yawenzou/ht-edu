@@ -12,7 +12,18 @@
 	<div class="hdu-wrap">
 		<div class="header">
 			<div class="header-content">
-				这里是头部
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" /></a>
+				</div>
+				<div class="login">
+					<div class="login-user">
+						服刑人员编号<input type="text" name="number" />
+					</div>
+					<div class="login-password">
+						密码<input type="text" name="number" />
+					</div>
+					<input type="button" class="login-btn" value="登录" />
+				</div>
 			</div>
 		</div>
 		<div class="nav-banner">
@@ -25,10 +36,62 @@
 				<div class="carousel">
 					<ul>
 						<li>
-							<a href="#"><img /></a>
-							<span class=""></span>
+							<a href="#"><img src="images/b01.jpg" /></a>
+							<div class="intro">
+								<div class="intro-img"></div>
+								<a>三个月工业改革三个月工业改革</a>
+							</div>
 						</li>
 					</ul>
+				</div>
+				<div class="news-details">
+					<div class="news-title">
+						<img src="images/news_title.jpg" />
+						<a href="#">更多</a>						
+					</div>
+					<div class="news-headline">
+						这里是新闻要闻
+					</div>
+					<div class="news-ul">
+						<ul>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/dot.jpg" style="vertical-align: middle; margin: 0px 10px;" />这里是新闻要闻这里是新闻要闻这里是</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<ul class="subsystems clearfix">
@@ -41,7 +104,7 @@
 			</ul>
 			<div class="news-container clearfix">
 				<div class="news-part">
-					<ul class="news-title clearfix">
+					<ul class="news-tit clearfix">
 						<li class="title-active"  _content = "block1-1"><a href="###">监区文化</a></li>
 					</ul>
 					<ul class="news-block" id="block1-1">
@@ -73,7 +136,7 @@
 					</ul>
 				</div>
 				<div class="news-part">
-					<ul class="news-title clearfix">
+					<ul class="news-tit clearfix">
 						<li class="title-active" _content = "block2-1"><a href="###">通知公告</a></li>
 						<li _content = "block2-2"><a href="###">考勤奖励</a></li>
 					</ul>
@@ -134,7 +197,32 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer">这里是底部</div>
+		<div class="footer">
+			<div class="footer-content">
+				<div class="out-link">
+					<table>
+						<tr>
+							<td><a href="#">设为首页</a></td>
+							<td><a href="#">设为首页</a></td>
+							<td><a href="#">设为首页</a></td>
+							<td><a href="#">设为首页</a></td>
+							<td><a href="#">设为首页</a></td>
+						</tr>
+					</table>					
+				</div>
+				<div class="email">
+					<table>
+						<tr>
+							<td><a href="#">局长信箱</a></td>
+							<td><a href="#">局长信箱</a></td>
+							<td><a href="#">局长信箱</a></td>
+							<td><a href="#">局长信箱</a></td>
+							<td><a href="#">局长信箱</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script type="text/javascript">
@@ -144,7 +232,7 @@
 
 		//切换最新消息tab块
 		function toggleTab() {
-			$(".news-title li").hover(function() {
+			$(".news-tit li").hover(function() {
 				$(this).addClass("title-active").siblings().removeClass("title-active");
 				$('#'+$(this).attr("_content")).show().siblings(".news-block").hide();
 			})
