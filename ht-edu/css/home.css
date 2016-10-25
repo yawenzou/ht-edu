@@ -1,8 +1,4 @@
 /*首页样式*/
-.hdu-wrap {
-	position: relative;
-	width: 100%;
-}
 
 /*中间内容部分*/
 .hdu-content {
@@ -232,53 +228,4 @@
 .news-ul li img{
 	vertical-align: middle; 
 	margin: 0px 10px;
-}
-
-/*  网页底部  */
-.footer {
-	width: 100%;
-	min-height: 100px;	
-	background:#ffffff url(../images/foot_bg.jpg) no-repeat;
-}
-.footer .footer-content{
-	width: 1000px;	
-	margin: 0 auto;	
-}
-.footer-content .out-link{
-	width: 100%;	
-}
-.out-link table{
-	width: 65%;
-	margin: 0 auto;
-	text-align: center;
-}
-.out-link table td{
-	background-image: url(../images/foot_line.png);
-	background-repeat: no-repeat;
-	background-position: center right;
-}
-.out-link table td:last-child {
-	background-image: none;
-}
-.out-link table td a{
-	color: #ffffff;
-	line-height: 40px;
-}
-.out-link table td a:hover{
-	text-decoration: underline;
-}
-.footer-content .email{
-	width: 100%;
-}
-.email table{
-	width: 56%;
-	margin: 0 auto;
-	text-align: center;
-}
-.email table td a{
-	color: #333333;
-	line-height: 40px;
-}
-.email table td a:hover{
-	text-decoration: underline;
 }

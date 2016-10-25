@@ -1,0 +1,32 @@
+/*列表也和文章页样式*/
+.container {
+	width: 1000px;
+	margin: 20px auto 0 auto;
+}
+
+/*文章当前位置*/
+.local-content {
+	position: relative;
+	height: 44px;
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-color: #fff;
+}
+
+/*左侧导航*/
+.left-nav {
+	width: 256px;
+	float: left;
+}
+
+/*内容部分*/
+.right-content {
+	margin-left: 256px;
+}
