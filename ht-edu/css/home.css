@@ -30,6 +30,10 @@
 	font-size: 16px;
 	font-weight: bold;
 }
+.login input {
+	color: #fff;
+	text-indent: 5px;
+}
 .login .login-btn{
 	color: #ffffff;
 	font-size: 16px;
@@ -74,7 +78,7 @@
 	position: relative;
 	width: 100%;
 	height: 50px;
-	bottom: 1px solid #1f89d0;
+	border-bottom: 2px solid #1f89d0;
 	background-color: #fff;
 }
 .nav-banner-content {
@@ -82,6 +86,82 @@
 	width: 1000px;
 	height: 100%;
 	margin: 0 auto;
+	z-index: 100;
+}
+.navul {
+	float: left;
+	width: 780px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+.navul .navli-01 {
+	float: left;
+	font-weight: bold;
+}
+.nava-01:after {
+	content: "|";
+	color: #2088d2;
+	float: right;
+	font-size: 12px;
+}
+.navul li {
+	width: 110px;
+	text-align: center;
+}
+.navul li a {
+	display: block;
+	position: relative;
+}
+.navul-02 {
+	border-top: 2px solid #1f89d0;
+	position: relative;
+	overflow: hidden;
+	display: none;
+}
+.navli-02 {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	font-weight: normal;
+}
+.navli-02:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #f3f3f3;
+	opacity: 0.7;
+}
+.navul li:hover .navul-02 {
+	/*display: block;*/
+}
+.ser-content {
+	margin-left: 785px;
+	width: 220px;
+	height: 24px;
+	padding-top: 14px;
+}
+.ser-content input {
+	width: 153px;
+	height: 22px;
+	border: 1px solid #8bb6f8;
+	border-radius: 8px;
+	text-indent: 10px;
+}
+.ser-content .ser-btn {
+	display: inline-block;
+	width: 50px;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+.ser-content .ser-btn:hover {
+	color: red;
 }
 
 /*中间内容部分*/
@@ -170,17 +250,24 @@
 	display: block;
 }
 .news-block li{
-	list-style: disc;
 	line-height: 30px;
-	margin-left: 30px;
+	margin-left: 20px;
 }
 .news-block li .news-time {
 	float: right;
 	margin-right: 10px;
 }
 .news-block li .news-text {
-	display: inline-block;
-	width: 
+	float: left;
+	width: 300px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.news-block li .news-text:before {
+	content: url("../images/icon_disc.png");
+	margin-right: 10px;
+	
 }
 
 
@@ -224,6 +311,7 @@
 	margin-top: -20px;
 	margin-left: -280px;
 	line-height: 40px;
+	color: #fff;
 }
 
 /*  新闻要闻  */
@@ -277,7 +365,7 @@
 	width: 100%;	
 }
 .out-link table{
-	width: 70%;
+	width: 65%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -285,6 +373,9 @@
 	background-image: url(../images/foot_line.png);
 	background-repeat: no-repeat;
 	background-position: center right;
+}
+.out-link table td:last-child {
+	background-image: none;
 }
 .out-link table td a{
 	color: #ffffff;

@@ -7,7 +7,7 @@ a { text-decoration:none; color: #333; }
 a:hover { text-decoration:none; color: #2088d2;}
 img { border:none; }
 ol,ul,li { list-style:none; }
-input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; outline: none;}
 table { border-collapse:collapse; }
 html {overflow-y: auto;} 
 
