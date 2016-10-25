@@ -14,7 +14,7 @@
 		<div class="header">
 			<div class="header-content">
 				<div class="logo">
-					<a href="#"><img src="images/logo.png" /></a>
+					<a href="#"><img src="../images/logo.png" /></a>
 				</div>
 				<div class="login">
 					<div class="login-user">
@@ -85,9 +85,48 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="local-content">索引</div>
+			<div class="local-content">
+				<div class="local">
+					<a href="#">首页</a>&nbsp; > &nbsp;<a href="#">信息发布</a>&nbsp; > &nbsp;<a href="#">法律法规</a>
+				</div>
+			</div>
 			<div class="content">
-				<div class="left-nav">侧边导航</div>
+				<div class="left-nav">
+					<ul>
+						<li class="left-nav-li nav">							
+							<a href="#">法律法规</a>
+							<img src="../images/more.png" class="more" />
+						</li>
+						<li class="left-nav-li">
+							<a href="#">法律法规</a>
+							<img src="../images/more.png" class="more" />
+						</li>
+						<li class="left-nav-li">
+							<a href="#">法律法规</a>
+							<img src="../images/more.png" class="more" />
+						</li>
+						<li class="left-nav-li">
+							<a href="#">法律法规</a>
+							<img src="../images/more.png" class="more" />
+						</li>
+						<li class="left-nav-li">
+							<a href="#">法律法规</a>
+							<img src="../images/more.png" class="more" />
+						</li>
+						<li class="left-nav-li">
+							<a href="#">法律法规</a>
+							<img src="../images/more.png" class="more" />
+						</li>
+						<li class="left-nav-li">
+							<a href="#">法律法规</a>
+							<img src="../images/more.png" class="more" />
+						</li>
+						<li class="left-nav-li">
+							<a href="#">法律法规</a>
+							<img src="../images/more.png" class="more" />
+						</li>
+					</ul>
+				</div>
 				<div class="right-content">内容区</div>
 			</div>
 		</div>
@@ -101,7 +140,7 @@
 							<td><a href="#">后台管理</a></td>
 							<td><a href="#">加入收藏</a></td>
 						</tr>
-					</table>					
+					</table>				
 				</div>
 				<div class="email">
 					<table>
@@ -129,6 +168,14 @@
 				$(this).find(".navul-02").slideToggle()
 			})
 		}
+		
+		//点击li背景色变化
+        $(function(){
+            $(".left-nav li").click(function(){
+            $(".left-nav li").eq($(this).index()).addClass("nav").siblings().removeClass("nav");
+            $(".left-nav li a").eq($(this).index()).css("color","#2088d2");
+            })
+        })
 	</script>
 </body>
 </html>
