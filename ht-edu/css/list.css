@@ -16,7 +16,7 @@
 .content {
 	position: relative;
 	width: 100%;
-	height: 600px;
+	height: 800px;
 	background-color: #fff;
 }
 
@@ -29,4 +29,52 @@
 /*内容部分*/
 .right-content {
 	margin-left: 256px;
+	padding-top: 20px;
+}
+
+/*iframe内容*/
+.list-wrap {
+	width: 718px;
+	height: 728px;
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+}
+.list-wrap h2.list-title {
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #2088d2;
+	text-indent: 30px;
+}
+.list-content {
+	position: relative;
+	margin: 10px 20px;
+}
+.navlist-01 {
+	margin-bottom: 100px;	
+}
+.navlist-01 li {
+	width: 620px;
+	height: 40px;
+	line-height: 40px;
+	list-style: disc;
+	margin-left: 40px;
+	font-size: 16px;
+}
+.list-btn {
+	position: absolute;
+	bottom: 0;
+	right: 40px;
+	width: 500px;
+}
+.list-btn .first-btn,.list-btn .pre-btn,.list-btn .next-btn {
+	width: 98px;
+	height: 32px;
+	line-height: 32px;
+	border: 1px solid #dcdcdc;
+	font-size: 16px;
+}
+.list-btn .first-btn:hover,.list-btn .pre-btn:hover,.list-btn .next-btn:hover {
+	border: 1px solid #2088d2;
 }
