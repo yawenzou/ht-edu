@@ -12,6 +12,13 @@
 	background-color: #fff;
 	margin-bottom: 20px;
 }
+.local{
+	margin-left:20px ;
+}
+.local a{
+	font-size: 14px;
+	line-height: 44px;
+}
 
 .content {
 	position: relative;
@@ -24,6 +31,35 @@
 .left-nav {
 	width: 256px;
 	float: left;
+}
+.left-nav ul{
+	padding: 20px 18px 0 18px;
+	width:220px;
+}
+.left-nav .left-nav-li{
+	height: 38px;	
+	background-color: #f5f5f5;
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 38px;
+	background-image: url(../images/leftnav_line.jpg);
+	background-repeat: no-repeat;
+}
+.left-nav .left-nav-li:hover{
+	cursor: pointer;
+	background-color: #dcdcdc;
+}
+.left-nav .left-nav-li a{
+	padding-left: 20px;
+}
+.left-nav .nav{
+	color: #2088d2;
+	background-color: #dcdcdc;
+}
+.left-nav .more{
+	float: right;
+	margin-top: 14px;
+	margin-right: 12px;
 }
 
 /*内容部分*/
@@ -64,7 +100,7 @@
 }
 .list-btn {
 	position: absolute;
-	bottom: 0;
+	bottom: 35px;
 	right: 40px;
 	width: 500px;
 }
@@ -74,7 +110,12 @@
 	line-height: 32px;
 	border: 1px solid #dcdcdc;
 	font-size: 16px;
+	display: inline-block;
+	text-align: center;
 }
 .list-btn .first-btn:hover,.list-btn .pre-btn:hover,.list-btn .next-btn:hover {
 	border: 1px solid #2088d2;
+}
+.list-btn .btnul ,.list-btn .btnul li{
+	display: inline-block;
 }
