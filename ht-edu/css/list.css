@@ -56,6 +56,9 @@
 	color: #2088d2;
 	background-color: #dcdcdc;
 }
+.left-nav .nav a {
+	color: #2088d2;
+}
 .left-nav .more{
 	float: right;
 	margin-top: 14px;
@@ -98,11 +101,16 @@
 	margin-left: 40px;
 	font-size: 16px;
 }
+
+/*分页*/
 .list-btn {
 	position: absolute;
 	bottom: 35px;
 	right: 40px;
 	width: 500px;
+}
+.list-btn a {
+	margin:0 5px;
 }
 .list-btn .first-btn,.list-btn .pre-btn,.list-btn .next-btn {
 	width: 98px;
