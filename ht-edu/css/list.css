@@ -39,7 +39,7 @@
 .left-nav .left-nav-li{
 	height: 38px;	
 	background-color: #f5f5f5;
-	margin-top: 10px;
+	margin-bottom: 10px;
 	font-size: 14px;
 	line-height: 38px;
 	background-image: url(../images/leftnav_line.jpg);
@@ -55,6 +55,9 @@
 .left-nav .nav{
 	color: #2088d2;
 	background-color: #dcdcdc;
+}
+.left-nav .nav a {
+	color: #2088d2;
 }
 .left-nav .more{
 	float: right;
@@ -99,6 +102,8 @@
 	font-size: 16px;
 }
 
+
+/*二级列表*/
 .navlist-02 {
 	margin-bottom: 100px;	
 }
@@ -117,12 +122,15 @@
 	background:#dcdcdc url(../images/more.png) no-repeat center right 16px;
 }
 
-/*列表分页*/
+/*分页按钮*/
 .list-btn {
 	position: absolute;
 	bottom: 35px;
 	right: 40px;
 	width: 500px;
+}
+.list-btn a {
+	margin:0 5px;
 }
 .list-btn .first-btn,.list-btn .pre-btn,.list-btn .next-btn {
 	width: 98px;

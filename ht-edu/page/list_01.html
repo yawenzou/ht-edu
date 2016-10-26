@@ -25,6 +25,15 @@
 					</div>
 					<input type="button" class="login-btn" value="登录" />
 				</div>
+				<div class="enter">
+					<div class="enter-user">
+						<a href="#">张小五</a>
+					</div>
+					<div class="enter-number">
+						<a href="#">0239658742</a>
+					</div>
+					<input type="button" class="exit-btn" value="退出登录" />
+				</div>
 			</div>
 		</div>
 		<div class="nav-banner">
@@ -128,7 +137,7 @@
 					</ul>
 				</div>
 				<div class="right-content">
-					<iframe src="iframe_list01.html" frameborder="0" height="730" width="720"></iframe>
+					<iframe src="iframe_list02.html" frameborder="0" height="730" width="720"></iframe>
 				</div>
 			</div>
 		</div>
@@ -162,6 +171,7 @@
 	<script type="text/javascript">
 		$(function() {
 			navAnimate();
+			changeNavActive();
 		})
 
 		//导航动画效果
@@ -172,12 +182,11 @@
 		}
 		
 		//点击li背景色变化
-        $(function(){
+        function changeNavActive(){
             $(".left-nav li").click(function(){
             $(".left-nav li").eq($(this).index()).addClass("nav").siblings().removeClass("nav");
-            $(".left-nav li a").eq($(this).index()).css("color","#2088d2");
             })
-        })
+        }
 	</script>
 </body>
 </html>
