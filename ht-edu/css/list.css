@@ -51,6 +51,7 @@
 }
 .left-nav .left-nav-li a{
 	padding-left: 20px;
+	display: block;
 }
 .left-nav .nav{
 	background-color: #dcdcdc;
@@ -119,6 +120,11 @@
 }
 .navlist-02 li a:hover{
 	background:#dcdcdc url(../images/more.png) no-repeat center right 16px;
+}
+
+/*文章页*/
+.article {
+	margin: 10 20px;
 }
 
 /*分页按钮*/
