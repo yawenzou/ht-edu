@@ -1,4 +1,4 @@
-/*列表也和文章页样式*/
+﻿/*列表也和文章页样式*/
 .container {
 	width: 1000px;
 	margin: 20px auto 0 auto;
@@ -39,7 +39,7 @@
 .left-nav .left-nav-li{
 	height: 38px;	
 	background-color: #f5f5f5;
-	margin-top: 10px;
+	margin-bottom: 10px;
 	font-size: 14px;
 	line-height: 38px;
 	background-image: url(../images/leftnav_line.jpg);
@@ -102,7 +102,27 @@
 	font-size: 16px;
 }
 
-/*分页*/
+
+/*二级列表*/
+.navlist-02 {
+	margin-bottom: 100px;	
+}
+.navlist-02 li{
+	width: 660px;
+	margin-top: 12px;
+}
+.navlist-02 a{
+	display: block;
+	padding: 0px 15px 0px 15px;
+	line-height: 38px;
+	font-size: 16px;
+	background:#f5f5f5 url(../images/more_gray.png) no-repeat center right 16px;
+}
+.navlist-02 li a:hover{
+	background:#dcdcdc url(../images/more.png) no-repeat center right 16px;
+}
+
+/*分页按钮*/
 .list-btn {
 	position: absolute;
 	bottom: 35px;

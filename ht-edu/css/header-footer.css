@@ -27,6 +27,7 @@
 	overflow: hidden;
 	font-size: 16px;
 	font-weight: bold;
+	display: none;
 }
 .login input {
 	color: #fff;
@@ -69,6 +70,50 @@
 	border: 1px solid #ffffff;
 	padding-left: 2px;
 	margin-left: 6px;
+}
+
+/*登录之后样式*/
+.header-content .enter{
+	/*display: none;*/
+	position: absolute;
+	bottom: 10px;
+	right: 5px;
+	overflow: hidden;
+	font-size: 16px;
+	font-weight: bold;
+}
+.enter .exit-btn{
+	color: #ffffff;
+	line-height: 26px;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 10px;
+	padding:2px 10px;
+	background:transparent;
+	border: 1px solid #ffffff;
+	cursor: pointer;
+}
+.enter .exit-btn:hover{
+	color: #ff0000;
+	border:1px solid #ff0000;
+}
+.enter .enter-user{
+	float: left;
+}
+.enter .enter-user a{
+	line-height: 30px;
+	color: #ffffff;
+	padding-left: 5px;
+	margin:0 6px;
+}
+.enter .enter-number{
+	float: left;
+}
+.enter .enter-number a{
+	line-height: 30px;
+	color: #ffffff;
+	padding-left: 5px;
+	margin:0 6px;
 }
 
 /*导航部分*/
