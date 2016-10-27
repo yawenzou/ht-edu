@@ -1,1 +1,39 @@
 /*子系统样式*/
+.sub-wrap {
+	width: 100%;
+}
+
+/*出监实训框架页*/
+.sub-container {
+	position: relative;
+	width: 1000px;
+	min-height: 400px;
+	margin: 35px auto;
+}
+.sub-left {
+	float: left;
+	width: 270px;
+	background-color: #fff;
+	height: 700px;
+}
+
+.sub-right {
+	position: relative;
+	width: 700px;
+	margin-left: 300px;
+	background-color: #fff;
+	height: 700px;
+}
+
+
+/*出监实训首页*/
+.outPractice-wrap {
+	width: 100%;
+	height: 700px;
+	background-color: #fff;
+}
+.op-img {
+	width: 600px;
+	height: 500px;
+	padding: 60px 0 0 40px;
+}
