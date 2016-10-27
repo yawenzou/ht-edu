@@ -116,7 +116,7 @@
 	margin:0 6px;
 }
 
-/*导航部分*/
+/*首页导航部分*/
 .nav-banner {
 	position: relative;
 	width: 100%;
@@ -205,6 +205,36 @@
 }
 .ser-content .ser-btn:hover {
 	color: red;
+}
+
+
+/*子系统头部*/
+.sub-head {
+	position: relative;
+	width: 100%;
+	height: 66px;
+	background-color: #1162a3;
+	border-bottom: 2px solid #ffb94e;
+}
+.sub-head-content {
+	width: 1000px;
+	height: 42px;
+	padding: 12px 0;
+	margin: 0 auto;
+}
+.sub-head-content img {
+	width: 42px;
+	height: 42px;
+	float: left;
+}
+.logo-name {
+	color: #fff;
+	font-size: 12px;
+	margin-left: 60px;
+	font-weight: bold;
+}
+.logo-name p:first-child {
+	font-size: 20px;
 }
 
 
