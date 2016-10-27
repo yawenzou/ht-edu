@@ -10,6 +10,8 @@
 	margin-top: 20px;
 	background-color: #ccdaf2;
 }
+
+/*在线考试*/
 .sub-choose{
 	position: relative;
 	top: 20px;
@@ -149,4 +151,44 @@
 	font-weight: bold;
 	color: #ffffff;
 	cursor: pointer;
+}
+
+/*视频会见*/
+.sub-meeting{
+	position: relative;
+	top: 20px;
+	left: 35px;
+	width: 930px;
+	height: 547px;
+	background-color: #ffffff;
+}
+.meeting-title{
+	width: 900px;
+	margin: 0 auto;
+	border-bottom: 3px solid #ffb84c;
+	padding-left: 20px;
+}
+.meeting-title h3{
+	line-height: 36px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #3e6078;
+	padding-top: 8px;
+}
+.meeting-title p{
+	color: #676767;
+	font-weight: bold;
+	padding-bottom: 8px;
+}
+.meeting-win{
+	width: 100%;
+	overflow: hidden;
+}
+.win-left{
+	margin: 30px 10px 0 30px;
+	float: left;
+}
+.win-right{
+	float: left;
+	margin: 30px 5px 0 5px;
 }
