@@ -136,6 +136,92 @@
 	overflow: hidden;
 }
 
+/*心理咨询首页*/
+.psychConsult-wrap{
+	width:100%;
+	height: 700px;
+	border: 1px solid #ff0000;
+/*	background-color: #FFFFFF;*/
+	margin: 20px 0 0 20px;
+}
+.psychConsult-content{
+	width: 670px;
+	height: 700px;
+}
+.psych-title{
+	width: 100%;
+	height: 40px;
+	background-color: #2088d2;
+}
+.psych-title span{
+	padding-left: 30px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #ffffff;
+}
+.intro-tip{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	color: #ff0000;
+}
+.intro-tip span{
+	font-size: 16px;
+	padding-left: 30px;
+}
+.psych-details{
+	width: 100%;
+	min-height: 600px;
+	background-color: #ffffff;
+}
+.consult-item{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #2088d2;
+}
+.item{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.item li{
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+	margin-right: 10px;
+	background-color: #999999;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	float: left;
+	font-size: 16px;
+	color: #ffffff;
+	cursor: pointer;
+}
+.item .li-active{
+	background-color: #2088d2;
+}
+.video-win{
+	width: 428px;
+	height: 340px;
+	margin: 20px auto;
+}
+.video-win .begin-btn{
+	display: block;
+	width: 184px;
+	height: 30px;
+	margin: 20px auto;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	color: #ffffff;
+	border: none;
+	background-color:#2088d2;
+	cursor: pointer;
+}
+.video-win .begin-btn:hover{
+	background-color: #1162a3;
+}
 
 /*在线考试*/
 .sub-choose{
