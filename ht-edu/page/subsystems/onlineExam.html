@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>在线考试</title>
+	<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/subsystems.css" />
+	<script type="text/javascript" src="../../js/jquery.min.js"></script>
+</head>
+<body>
+	<!--<div class="sub-wrap">
+	</div>-->
+		<div class="sub-content">
+			<div class="sub-choose">
+				<div class="exer-title">
+					<h3>测试练习</h3>
+					<p>提示：可自由组合测试题库，选中需要测试的题型、类别后点击开始测试。</p>
+				</div>
+				<div class="exer-choose">
+					<div class="que-types">
+						<div class="que-types-left">
+							<span>题型选择</span>
+						</div>
+						<div class="que-types-right">
+							<ul>
+								<li class="active"><a href="#">单选题</a></li>
+								<li><a href="#">多选题</a></li>
+								<li><a href="#">是非题</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="sort-types">
+						<div class="sort-types-left">
+							<span>类别选择</span>
+						</div>
+						<div class="sort-types-right">
+							<ul>
+								<li><a href="#">法律法规</a></li>
+								<li><a href="#">党纪</a></li>
+								<li><a href="#">政纪</a></li>
+								<li><a href="#">制度规定</a></li>
+								<li><a href="#">专项测试</a></li>
+								<li><a href="#">其他</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="choose-btn">
+					<input type="button" value="开始测试" class="begin-btn-1" /><br />
+					<input type="button" value="开始测试" class="begin-btn-2" />
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				choosed();
+			})
+			/*选择*/
+		    function choosed() {
+		    	$(".que-types-right li").click(function() {   		    		
+		    		$(this).addClass('active').siblings().removeClass("active");
+		    	});
+		    	$(".sort-types-right li").click(function() {
+		    		$(this).toggleClass("active");
+		    	});
+		    }
+		</script>
+</body>
+</html>
