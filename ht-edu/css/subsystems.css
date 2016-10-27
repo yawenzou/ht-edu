@@ -193,7 +193,7 @@
 .que-types-right li:hover{
 	background-color: #2088d2;
 }
-.active{
+.que-types-right .active,.sort-types-right .active{
 	background-color: #2088d2;
 }
 
