@@ -11,18 +11,88 @@
 	margin: 35px auto;
 }
 .sub-left {
-	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
 	width: 270px;
 	background-color: #fff;
 	height: 700px;
+	/*overflow-y: auto;*/
+	z-index: 100;
 }
 /*左侧导航*/
 .navul-left-01 {
 	position: relative;
 	width: 240px;
-	padding-top: 20px;
-	margin: 0 auto;
+	margin: 20px auto 0 auto;
+}
+.navul-left-01 a {
+	display: block;
+}
+.navli-left-01 {
 	border: 1px solid #a7e0fe;
+	margin-bottom: 20px;
+}
+.nava-left-01 {
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	background-color: #2088d2;
+}
+.nava-left-01:hover {
+	color: #fff;
+}
+.nav-active {
+	background-color: #1162a3;
+}
+.navul-left-02 {
+	background-color: #fafafa;
+	display: none;
+}
+.navul-left-02 a {
+	color: #516e83;
+}
+.navul-left-02 a:hover {
+	color: #d14d24;
+	background-color: #fff;
+}
+.navli-left-02 {
+	position: relative;
+}
+.navli-left-02 a {
+	line-height: 34px;
+	text-indent: 30px;
+	font-size: 16px;
+}
+.navli-left-02 a img {
+	float: right;
+	margin-right: 30px;
+	margin-top: 12px;
+}
+.navli-left-02:hover .navul-left-03{
+	display: block;
+}
+.navul-left-03 {
+	position: absolute;
+	left: 238px;
+	top: 0px;
+	width: 186px;
+	border: 1px solid #eee;
+	background-color: #fff;
+	padding-left: 10px;
+	display: none;
+}
+.navli-left-03:before {
+	content: url("../images/dot.jpg");
+	float: left;
+	margin-right: 10px;
+}
+.navli-left-03 a {
+	line-height: 26px;
+	font-size: 14px;
+	text-indent: 0px;
 }
 
 .sub-right {
@@ -31,6 +101,7 @@
 	margin-left: 300px;
 	background-color: #fff;
 	height: 700px;
+	z-index: 10;
 }
 
 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>教学资源</title>
+	<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/subsystems.css" />
+
+	<script type="text/javascript" src = "../../js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="sub-wrap">
+		<div class="sub-head">
+			<div class="sub-head-content">
+				<img src="../../images/logo2.png" alt="logo">
+				<div class="logo-name">
+					<p>教学资源</p>
+					<p>JIAOXUEZIYUAN</p>
+				</div>	
+			</div>
+		</div>
+		<div class="sub-container clearfix">
+			<div class="sub-left">
+				<ul class="navul-left-01">
+					<li class="navli-left-01">
+						<a class="nava-left-01 nav-active" href="###"><span>学科列表</span></a>
+						<ul class="navul-left-02">
+							<li class="navli-left-02">
+								<a href="###"><span>语文</span><img src="../../images/more.png" alt=""></a>
+							</li>
+							<li class="navli-left-02">
+								<a href="###"><span>数学</span><img src="../../images/more.png" alt=""></a>
+							</li>
+							<li class="navli-left-02">
+								<a href="###"><span>英语</span><img src="../../images/more.png" alt=""></a>
+							</li>
+							<li class="navli-left-02">
+								<a href="###"><span>政治</span><img src="../../images/more.png" alt=""></a>
+							</li>
+							<li class="navli-left-02">
+								<a href="###"><span>历史</span><img src="../../images/more.png" alt=""></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="sub-right">
+				<iframe name="subFrame" id="subFrame" src="outPractice_index.html" frameborder="0" height="700" width="700"></iframe>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-content">
+				<div class="out-link">
+					<table>
+						<tr>
+							<td><a href="#">设为首页</a></td>
+							<td><a href="#">友情链接</a></td>
+							<td><a href="#">后台管理</a></td>
+							<td><a href="#">加入收藏</a></td>
+						</tr>
+					</table>				
+				</div>
+				<div class="email">
+					<table>
+						<tr>
+							<td><a href="#">局长信箱</a></td>
+							<td><a href="#">纪检信箱</a></td>
+							<td><a href="#">监狱长信箱</a></td>
+							<td><a href="#">意见信箱</a></td>
+							<td><a href="#">在线信箱</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(function() {
+			navLeftToggle();
+		})
+
+		/*左侧菜单栏切换*/
+		function navLeftToggle() {
+			$(".nava-left-01:eq(0)").next("ul").show();
+			$(".nava-left-01").click(function() {
+				$(this).next("ul").slideDown().parent("li").siblings("li").find("ul").slideUp();
+				$(this).addClass("nav-active").parent("li").siblings("li").find(".nava-left-01").removeClass("nav-active");
+			})
+		}
+	</script>
+</body>
+</html>
