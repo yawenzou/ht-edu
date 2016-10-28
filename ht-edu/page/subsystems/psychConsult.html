@@ -2,44 +2,85 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<title>心理咨询</title>
 	<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/common.css" />
 	<link rel="stylesheet" type="text/css" href="../../css/subsystems.css" />
-	<title>教学资源-首页</title>
+
+	<script type="text/javascript" src = "../../js/jquery.min.js"></script>
 </head>
 <body>
-	<div class="psychConsult-wrap">
-		<div class="psychConsult-content">
-			<div class="psych-title">
-				<span>挂号及咨询</span>
+	<div class="sub-wrap">
+		<div class="sub-head">
+			<div class="sub-head-content">
+				<img src="../../images/logo2.png" alt="logo">
+				<div class="logo-name">
+					<p>心理咨询</p>
+					<p>ZINLIZIXUN</p>
+				</div>	
 			</div>
-			<div class="intro-tip">
-				<span>您前面还有9人在排队，请耐心等候.......</span>
+		</div>
+		<div class="sub-container clearfix">
+			<div class="sub-left">
+				<ul class="navul-left-01">
+					<li class="navli-left-01">
+						<a class="nava-left-01 nav-active" href="###"><span>挂号及咨询</span></a>
+					</li>
+					<li class="navli-left-01">
+						<a class="nava-left-01" href="###"><span>心理测试</span></a>
+					</li>
+					<li class="navli-left-01">
+						<a class="nava-left-01" href="###"><span>治疗方案</span></a>
+					</li>
+					<li class="navli-left-01">
+						<a class="nava-left-01" href="###"><span>留言</span></a>
+					</li>
+				</ul>
 			</div>
-			<div class="psych-details">
-				<div class="consult-item">
-					<ul class="item">
-						<li class="li-active">文字咨询</li>
-						<li class="">视频咨询</li>
-					</ul>
+			<div class="sub-right">
+				<iframe name="subFrame" id="subFrame" src="psychConsult_index.html" frameborder="0" height="700" width="700"></iframe>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-content">
+				<div class="out-link">
+					<table>
+						<tr>
+							<td><a href="#">设为首页</a></td>
+							<td><a href="#">友情链接</a></td>
+							<td><a href="#">后台管理</a></td>
+							<td><a href="#">加入收藏</a></td>
+						</tr>
+					</table>				
 				</div>
-				<div class="video-win">
-					<img src="../../images/video.png" />
-					<input type="button" class="begin-btn" value="开始咨询" />
-				</div>				
+				<div class="email">
+					<table>
+						<tr>
+							<td><a href="#">局长信箱</a></td>
+							<td><a href="#">纪检信箱</a></td>
+							<td><a href="#">监狱长信箱</a></td>
+							<td><a href="#">意见信箱</a></td>
+							<td><a href="#">在线信箱</a></td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
+
 	<script type="text/javascript">
-		$(function(){
-			toggle();
+		$(function() {
+			navLeftToggle();
 		})
-		
-		/*切换菜单栏*/
-			function toggle() {
-				$(".item li").click(function() {					
-					$(this).addClass("li-active").siblings().removeClass("li-active");					
-				})
-			}
+
+		/*左侧菜单栏切换*/
+		function navLeftToggle() {
+			$(".nava-left-01:eq(0)").next("ul").show();
+			$(".nava-left-01").click(function() {
+				$(this).next("ul").slideDown().parent("li").siblings("li").find("ul").slideUp();
+				$(this).addClass("nav-active").parent("li").siblings("li").find(".nava-left-01").removeClass("nav-active");
+			})
+		}
 	</script>
 </body>
 </html>

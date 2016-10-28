@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="../../css/base.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/subsystems.css" />
+	<title>教学资源-首页</title>
+
+	<script type="text/javascript" src = "../../js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="psychConsult-wrap">
+		<div class="psychConsult-content">
+			<div class="psych-title">
+				<span>挂号及咨询</span>
+			</div>
+			<div class="intro-tip">
+				<span>您前面还有9人在排队，请耐心等候.......</span>
+			</div>
+			<div class="psych-details">
+				<div class="consult-item">
+					<ul class="item">
+						<li class="li-active">文字咨询</li>
+						<li class="">视频咨询</li>
+					</ul>
+				</div>
+				<div class="video-win">
+					<img src="../../images/video.png" />
+					<input type="button" class="begin-btn" value="开始咨询" />
+				</div>				
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			toggle();
+		})
+		
+		/*切换菜单栏*/
+			function toggle() {
+				$(".item li").click(function() {					
+					$(this).addClass("li-active").siblings().removeClass("li-active");					
+				})
+			}
+	</script>
+</body>
+</html>

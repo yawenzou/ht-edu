@@ -165,12 +165,12 @@
 				</div>
 			</div>
 			<ul class="subsystems clearfix">
-				<li><a href = "###"><img src="images/icon_system_01.png" />出监实训</a></li>
-				<li><a href = "###"><img src="images/icon_system_02.png" />在线考试</a></li>
-				<li><a href = "###"><img src="images/icon_system_03.png" />自助查询</a></li>
-				<li><a href = "###"><img src="images/icon_system_04.png" />视频会见</a></li>
-				<li><a href = "###"><img src="images/icon_system_05.png" />心理咨询</a></li>
-				<li><a href = "###"><img src="images/icon_system_06.png" />教学资源</a></li>
+				<li><a href = "page/subsystems/outPractice.html" target = "_blank"><img src="images/icon_system_01.png"/>出监实训</a></li>
+				<li><a href = "page/subsystems/onlineExam.html" target = "_blank"><img src="images/icon_system_02.png" />在线考试</a></li>
+				<li><a href = "page/subsystems/autoSearch.html" target = "_blank"><img src="images/icon_system_03.png" />自助查询</a></li>
+				<li><a href = "page/subsystems/videoMeeting.html" target = "_blank" ><img src="images/icon_system_04.png"/>视频会见</a></li>
+				<li><a href = "page/subsystems/psychConsult.html" target = "_blank" ><img src="images/icon_system_05.png"/>心理咨询</a></li>
+				<li><a href = "page/subsystems/teachResource.html" target = "_blank"><img src="images/icon_system_06.png" />教学资源</a></li>
 			</ul>
 			<div class="news-container clearfix">
 				<div class="news-part">
@@ -561,7 +561,9 @@
 		//导航动画效果
 		function navAnimate() {
 			$(".navul li").hover(function() {
-				$(this).find(".navul-02").slideToggle()
+				$(this).find(".navul-02").slideDown();
+			}, function() {
+				$(this).find(".navul-02").slideUp();
 			})
 		}
 	</script>
